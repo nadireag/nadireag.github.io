@@ -1,49 +1,154 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Nadire Gokcehan - Data Scientist</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Lato&display=swap" rel="stylesheet">
+	</head>
+	<body class="is-preload">
 
-<body>
-  <h1>Name</h1>
-  <br>
-  <img src="http://lorempixel.com/400/200" alt="image">
-  <p>
-    What is Lorem Ipsum?
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <br>
-    <p>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    </p>
-    <br>
-    <ul>
-      <li>Email: <a href="#">samename@gmail.com</a></li>
-      <li>Github: <a href="#">sampleName</a></li> 
-      <li>LinkedIn: <a href="#">name@linkedin.com</a></li>     
-    </ul>
-    <table>
-        <tr>
-          <th>Books</th>
-          <th>Movies</th>
-          <th>Games</th>
-        </tr>
-        <tr>
-          <td>The Hobbit</td>
-          <td>Hot Fuzz</td>
-          <td>Dark Souls</td>
-        </tr>
-        <tr>
-          <td>The Name of the Wind</td>
-          <td>The Avengers</td>
-          <td>The Last of Us</td>
-        </tr>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="header-container">
+				<li><div class="logo"><span class="text">Nadire Gokcehan</span></div></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
-    </table>
-    <a href="contact.html">Contact Page</a>
+		<!-- Home -->
+		<article id="top" class="wrapper style1">
+			<div class="container">
+				<div class="row">
+					<div class="col-3 col-4-large col-12-medium">
+						<span class="image fit"><img src="images/profile.png" alt="profile photo" /></span>
+					</div>
+					<div class="col-9 col-8-large col-12-medium">
+						<header>
+							<h1>Hi. I'm <strong>Nadire Gokcehan</strong>.</h1>
+						</header>
+						<p>Data tells a story, I discovered the power of data and learned some of the latest technologies to work with data. It is like solving a puzzle, you need to deep dive into the data to figure out the story behind it. Good  stories are hidden in the data and you need to ask the right questions to uncover the mistery! Using data is such a powerful tool that helps us to make better decisions.</p>
+						<p>I recently earned a certificate in Data Analytics from The Data Bootcamp at The University of North Carolina Chapel Hill.</p>
+						<a href="#portfolio" class="button large scrolly">Learn about what I do</a>
+					</div>
+				</div>
+			</div>
+		</article>
 
+		<!-- Portfolio -->
+		<article id="portfolio" class="wrapper style3">
+			<div class="container">
+				<header>
+					<h2>Here’s some stuff I made recently.</h2>
+					<p>Some of the technologies I used for my projects are: Python, Pandas, Jupyter Notebook, Matplotlib, API's, SQL, PostgreSQL, HTML, CSS, Javascript, D3, Plotly,Chart.js, Leaflet, Scikit-Learn.</p>
+				</header>
+				<div class="row">
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://project3-renewable.herokuapp.com" class="image featured"><img src="images/rn.png" alt="" /></a>
+							<h3><a href="#">Renewable Predictions</a></h3>
+							<p>Using historical data that is available between the years 1969-2017 for renewable production and consumption values: Can we make accurate predictions about how the values will change for each state?
+							How renewable energy production will change in the US?
+							</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://project2-green-energy.herokuapp.com/" class="image featured"><img src="images/ge.png" alt="" /></a>
+							<h3><a href="#">Green Energy Visualizations</a></h3>
+							<p>Which states are using the most renewable energy? Total energy consumption vs. renewable energy potential by State: Can a State’s potential meet their consumption? Types of renewable energy by highest potential: Which types account for the most potential?</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/nadireag/Air-Quality" class="image featured"><img src="images/pollutant.png" alt="" /></a>
+							<h3><a href="#">Air Quality</a></h3>
+							<p> The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is. This project makes analysis for North Carolina and other US cities. What  are the main polutants? Is there any relationship between weather and air quality? Such as high temperature and air quality. The data retrived with the IQAir Visual API.</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://nadireag.github.io/Web-Design-Challenge/WebVisualization/" class="image featured"><img src="images/web.png" alt="" /></a>
+							<h3><a href="#">Weather Visualizations</a></h3>
+							<p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+							</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://nadireag.github.io/plotly-challenge/belly_button-plotly/index.html" class="image featured"><img src="images/plotly.png" alt="" /></a>
+							<h3><a href="#">Biodiversity Dashboard</a></h3>
+							<p>Using D3, Plotly and Javascript built an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.
+							</p>
+						</article>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/nadireag/sqlalchemy-challenge" class="image featured"><img src="images/pic.png" alt="" /></a>
+							<h3><a href="#">Climate Analysis</a></h3>
+							<p>Use Python, SQlAlchemy, Pandas and Matplotlib to do climate analysis and data exploration of the database. Design a Flask API, based on the data queries that was developed.
+							</p>
+						</article>
+					</div>
 
-</body>
+				</div>
+			</div>
+		</article>
 
+		<!-- Contact -->
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Get  in touch.</h2>
+					<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form method="post" action="#">
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="text" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Clear Form" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-12">
+						<hr />
+						<h3>Also find me on ...</h3>
+						<ul class="social">
+							<li><a href="https://linkedin.com/in/nadireg" class="icon brands fa-linkedin-in"   target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/nadireag" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<footer>
+					<ul id="copyright">
+						<li>&copy; 2020 Nadire Gokcehan</li>
+					</ul>
+				</footer>
+			</div>
+		</article>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
