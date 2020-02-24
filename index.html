@@ -29,8 +29,9 @@
 						<header>
 							<h1>Hi. I'm <strong>Nadire Gokcehan</strong>.</h1>
 						</header>
-						<p>Data tells a story, I discovered the power of data and learned some of the latest technologies to work with data. It is like solving a puzzle, you need to deep dive into the data to figure out the story behind it. Good  stories are hidden in the data and you need to ask the right questions to uncover the mistery! Using data is such a powerful tool that helps us to make better decisions.</p>
-						<p>I recently earned a certificate in Data Analytics from The Data Bootcamp at The University of North Carolina Chapel Hill.</p>
+						<p>Good stories are hidden in the data and you need to ask the right questions to uncover the mistery.</p>
+						<p>Data analysis is such a powerful tool that helps us to make better and educated decisions. I recently earned a certificate in Data Analytics from The Data Bootcamp at The University of North Carolina Chapel Hill and discovered the power of data and learned some of the latest technologies to work with it. It is like solving a puzzle, you need to dive deep into the details to figure out the story behind it. </p>
+						<p></p>
 						<a href="#portfolio" class="button large scrolly">Learn about what I do</a>
 					</div>
 				</div>
@@ -42,7 +43,7 @@
 			<div class="container">
 				<header>
 					<h2>Here’s some stuff I made recently.</h2>
-					<p>Some of the technologies I used for my projects are: Python, Pandas, Jupyter Notebook, Matplotlib, API's, SQL, PostgreSQL, HTML, CSS, Javascript, D3, Plotly,Chart.js, Leaflet, Scikit-Learn.</p>
+					<p>Some of the technologies I used for my projects are: Python, Pandas, Jupyter Notebook, Matplotlib, API's, SQL, PostgreSQL, HTML, CSS, Javascript, D3, Plotly, Chart.js, Leaflet, Scikit-Learn.</p>
 				</header>
 				<div class="row">
 					<div class="col-4 col-6-medium col-12-small">
@@ -72,7 +73,7 @@
 						<article class="box style2">
 							<a href="https://nadireag.github.io/Web-Design-Challenge/WebVisualization/" class="image featured"><img src="images/web.png" alt="" /></a>
 							<h3><a href="#">Weather Visualizations</a></h3>
-							<p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+							<p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
 							</p>
 						</article>
 					</div>
@@ -97,6 +98,7 @@
 			</div>
 		</article>
 
+
 		<!-- Contact -->
 		<article id="contact" class="wrapper style4">
 			<div class="container medium">
@@ -106,20 +108,21 @@
 				</header>
 				<div class="row">
 					<div class="col-12">
-						<form method="post" action="#">
+						<div id="messageDiv"></div>
+						<form method="post" action="https://nadire-portfolio-backend.herokuapp.com/api/update" name="contact-form" id="contact-form">
 							<div class="row">
-								<div class="col-6 col-12-small">
+								<div class="col-6 col-12-small form-group">
 									<input type="text" name="name" id="name" placeholder="Name" />
 								</div>
-								<div class="col-6 col-12-small">
+								<div class="col-6 col-12-small form-group">
 									<input type="text" name="email" id="email" placeholder="Email" />
 								</div>
-								<div class="col-12">
+								<div class="col-12 form-group">
 									<textarea name="message" id="message" placeholder="Message"></textarea>
 								</div>
-								<div class="col-12">
+								<div class="col-12 form-group">
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="submit" id="submit" name="send" value="Send Message"></li>
 										<li><input type="reset" value="Clear Form" class="alt" /></li>
 									</ul>
 								</div>

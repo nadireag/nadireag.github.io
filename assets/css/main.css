@@ -2175,6 +2175,26 @@ input, select, textarea {
 		font-size: 0.9em;
 	}
 
+	#messageDiv {
+		margin: 10px 0;
+		font-size: 18px;
+		border-radius: 4px;;
+	  }
+	  #messageDiv.success {
+		color: #2b8b0b;
+		background-color: #cff1c3;
+		padding: 10px;
+	  }
+	  #messageDiv.error {
+		color: #881b13;
+		background-color: #f2bab6;
+		padding: 10px;
+	  }
+	  .contact-form .invalid {
+		border: 2px solid #b3332a;
+	  }
+	  
+
 /* Copyright */
 
 	#copyright {

@@ -432,11 +432,10 @@
 
 		// Events.
 			$this
-				.on('submit', function() {
+				.on('submit', function(e) {
 
 					$this.find('input[type=text],input[type=password],textarea')
 						.each(function(event) {
-
 							var i = $(this);
 
 							if (i.attr('name').match(/-polyfill-field$/))
@@ -446,9 +445,7 @@
 
 								i.removeClass('polyfill-placeholder');
 								i.val('');
-
 							}
-
 						});
 
 				})
@@ -583,5 +580,72 @@
 			});
 
 	};
+
+	$('#name').on('input', function() {
+		if($(this).val()) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
+	});
+	
+	$('#email').on('input', function() {
+		const rgx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+		const isEmail = rgx.test($(this).val());
+		if(isEmail) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
+	});
+
+	$('#message').on('input', function() {
+		if($(this).val()) {
+			$(this).removeClass('invalid').addClass('valid');
+		} else {
+			$(this).removeClass('valid').addClass('invalid');
+		}
+	});
+
+	$('#contact-form').submit(function(event) {
+		event.preventDefault();
+
+		const formData = $('#contact-form').serializeArray();
+		let error = false;
+	
+		for (const input in formData){
+			const el = $(`#${formData[input]['name']}`);
+			const valid = el.hasClass('valid');
+	
+			if(!valid) {
+			error = true;
+			}
+		}
+	
+		if (error) {
+			$('#messageDiv').text('Please fill out all the fields before submitting the form.');
+			$('#messageDiv').removeClass('success').addClass('error');
+		} else {
+			$.ajax({
+				url: $(this).attr('action'),
+				type: 'POST',
+				dataType: 'json',
+				contentType: 'application/json',
+				data: JSON.stringify({
+					name: $('#name').val(),
+					email: $('#email').val(),
+					message: $('#message').val()
+				})
+			}).done(() => {
+				console.log('Went well :)');
+				$('.form-group').hide();
+				$('#messageDiv').text('Thank you for contacting. I\'ll get back to you as soon as I can.');
+				$('#messageDiv').removeClass('error').addClass('success');
+				$('#submit').removeAttr('disabled');
+			}).fail(err => {
+				console.log(err);
+			});
+		}
+	});
 
 })(jQuery);
