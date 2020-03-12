@@ -1932,11 +1932,14 @@ input, select, textarea {
 		text-align: center;
 		padding: 2em;
 	}
-	.box.h600 {
-		min-height: 600px;
+	.box.ch1 {
+		min-height: 660px;
 	}
-	.box.h500 {
-		min-height: 500px;
+	.box.ch2 {
+		min-height: 550px;
+	}
+	.project-desc {
+		line-height: 24px;
 	}
 
 		.box.style1 {
