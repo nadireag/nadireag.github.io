@@ -1936,10 +1936,10 @@ input, select, textarea {
 		padding: 2em;
 	}
 	.box.ch1 {
-		min-height: 680px;
+		min-height: 690px;
 	}
 	.box.ch2 {
-		min-height: 550px;
+		min-height: 580px;
 	}
 	.project-desc {
 		line-height: 24px;
