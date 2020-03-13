@@ -1925,6 +1925,9 @@ input, select, textarea {
 			}
 
 /* Box */
+	.box :hover img{
+		transform: scale(1.01);
+	}
 
 	.box {
 		background: #fff;
