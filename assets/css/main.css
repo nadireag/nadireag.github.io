@@ -1941,6 +1941,9 @@ input, select, textarea {
 	.box.ch2 {
 		min-height: 580px;
 	}
+	.box.ch3 {
+		min-height: 694px;
+	}
 	.project-desc {
 		line-height: 24px;
 	}
